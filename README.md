@@ -9,3 +9,11 @@
 <h4 align="center">p5js graphics for Dann models</h4>
 <p align="center">
     Display any Dann model & customize themes!
+
+
+<br/><br/><br/>
+
+### CDN
+```
+<script src="https://github.com/matiasvlevi/Dann-p5/blob/main/build/dannp5.js"></script>
+```
