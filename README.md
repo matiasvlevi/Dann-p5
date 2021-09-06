@@ -86,7 +86,7 @@ function draw() {
 
 
 # Socials
-[click here](https://www.patreon.com/join/dannjs)
+![click here](https://www.patreon.com/join/dannjs)
 
 <br/>
 
