@@ -91,6 +91,9 @@ function draw() {
 // Set a Dann model
 graph.setModel(model);
 
+// Set theme preset
+graph.setTheme(theme); // CLASSIC, MODERN, ROBOT, STANDARD
+
 // Set an individual color
 graph.setColor(key, [r, g, b, a]);
 
@@ -103,9 +106,6 @@ graph.setColor(key, [r, g, b, a]);
 * stroke.contour
 * stroke.neuron
 */
-
-// Set theme preset
-graph.setTheme(theme); // CLASSIC, MODERN, ROBOT, STANDARD
 
 // Set display mode
 graph.setMode(mode);   // SQUARE, FIXED, FIXED_UP
