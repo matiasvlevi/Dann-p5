@@ -4,7 +4,11 @@ module.exports = function(grunt) {
   const config = {
     concat: {
       build: {
-        src: ['src/*.js'],
+        src: [
+          'src/NetGraph/*.js',
+          'src/error/*.js',
+          'src/NetGraph/**/*.js',
+        ],
         dest: 'build/dannp5.js'
       }
     },
