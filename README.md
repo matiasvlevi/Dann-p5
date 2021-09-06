@@ -23,6 +23,8 @@
 <script src="https://cdn.jsdelivr.net/gh/matiasvlevi/dann-p5@latest/build/dannp5.min.js"></script>
 ```
 
+p5js & Dannjs are included in this CDN
+
 <br/>
 
 # Getting started
