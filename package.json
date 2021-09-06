@@ -16,8 +16,6 @@
     "grunt-contrib-concat": "^1.0.1",
     "grunt-http": "^2.3.3",
     "grunt-terser": "^2.0.0",
-    "request": "^2.88.2",
-    "request-promise": "^4.2.6",
     "terser": "^5.7.2"
   }
 }
