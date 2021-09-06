@@ -14,6 +14,6 @@
 <br/><br/><br/>
 
 ### CDN
-```
+```html
 <script src="https://github.com/matiasvlevi/Dann-p5/blob/main/build/dannp5.js"></script>
 ```
