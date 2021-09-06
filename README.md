@@ -13,7 +13,7 @@
   </p>
   <br/>
   <p align="center">
-  <img src="https://i.ibb.co/6ssYKHG/unknown.png" height="260">  <img src="https://i.ibb.co/NZGV48W/unknown-1.png" height="260">
+  <img src="https://i.ibb.co/6ssYKHG/unknown.png" height="240">  <img src="https://i.ibb.co/NZGV48W/unknown-1.png" height="240">
   </p>
 
 <br/>
