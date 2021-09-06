@@ -1,5 +1,5 @@
 // Show in canvas
-NetGraph.prototype.show = function show(model) {
+p5.NetGraph.prototype.show = function show(model) {
   push();
 
   // Display settings.

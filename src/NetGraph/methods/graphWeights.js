@@ -1,4 +1,4 @@
-NetGraph.prototype.graphWeights = function graphWeights() {
+p5.NetGraph.prototype.graphWeights = function graphWeights() {
 
   if (this.model.weights.length > 0) {
     const weights = this.model.weights;
@@ -35,7 +35,7 @@ NetGraph.prototype.graphWeights = function graphWeights() {
             let ex = this.theme.orientation === VERTICAL ? (k) * spacing : (i) * this.theme.spacing.layer;
             let ey = this.theme.orientation === VERTICAL ? (i) * this.theme.spacing.layer : (k) * spacing;
             if (this.theme.dynamic) {
-              let c = NetGraph.colorScale(
+              let c = p5.NetGraph.colorScale(
                 weights[i].matrix[j - s0][k - s],
                 this.theme.valueBounds.weight.min,
                 this.theme.valueBounds.weight.max,
@@ -80,7 +80,7 @@ NetGraph.prototype.graphWeights = function graphWeights() {
             let ex = this.theme.orientation === VERTICAL ? (k) * spacing : (i) * this.theme.spacing.layer;
             let ey = this.theme.orientation === VERTICAL ? (i) * this.theme.spacing.layer : (k) * spacing;
             if (this.theme.dynamic) {
-              let c = NetGraph.colorScale(
+              let c = p5.NetGraph.colorScale(
                 weights[i].matrix[j - s0][k - s],
                 this.theme.valueBounds.weight.min,
                 this.theme.valueBounds.weight.max,
@@ -129,7 +129,7 @@ NetGraph.prototype.graphWeights = function graphWeights() {
             let ex = this.theme.orientation === VERTICAL ? (k + d) * spacing : (i) * this.theme.spacing.layer;
             let ey = this.theme.orientation === VERTICAL ? (i) * this.theme.spacing.layer : (k + d) * spacing;
             if (this.theme.dynamic) {
-              let c = NetGraph.colorScale(
+              let c = p5.NetGraph.colorScale(
                 weights[i].matrix[j - s0][k - s],
                 this.theme.valueBounds.weight.min,
                 this.theme.valueBounds.weight.max,
@@ -148,9 +148,9 @@ NetGraph.prototype.graphWeights = function graphWeights() {
     }
 
   } else {
-    NetGraph.error(
+    p5.NetGraph.error(
       'The weights of the model do not exist, try Dann.prototype.makeWeights() to initialize the weights.',
-      'NetGraph.prototype.graphWeights'
+      'p5.NetGraph.prototype.graphWeights'
     );
   }
   return;

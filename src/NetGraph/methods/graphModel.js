@@ -1,4 +1,4 @@
-NetGraph.prototype.graphLayers = function graphLayers() {
+p5.NetGraph.prototype.graphLayers = function graphLayers() {
 
   const layers = this.model.Layers;
   this.theme.spacing.layer = (this.theme.orientation === VERTICAL) ? this.height / (layers.length - 1) : this.width / (layers.length - 1);
@@ -19,7 +19,7 @@ NetGraph.prototype.graphLayers = function graphLayers() {
         let y = this.theme.orientation === VERTICAL ? i * this.theme.spacing.layer : j * spacing;
 
         if (this.theme.dynamic) {
-          let c = NetGraph.colorScale(
+          let c = p5.NetGraph.colorScale(
             layers[i].layer.matrix[j - s][0],
             this.theme.valueBounds.neuron.min,
             this.theme.valueBounds.neuron.max,
@@ -50,7 +50,7 @@ NetGraph.prototype.graphLayers = function graphLayers() {
         let y = this.theme.orientation === VERTICAL ? i * this.theme.spacing.layer : j * spacing;
 
         if (this.theme.dynamic) {
-          let c = NetGraph.colorScale(
+          let c = p5.NetGraph.colorScale(
             layers[i].layer.matrix[j - s][0],
             this.theme.valueBounds.neuron.min,
             this.theme.valueBounds.neuron.max,
@@ -82,7 +82,7 @@ NetGraph.prototype.graphLayers = function graphLayers() {
         let y = this.theme.orientation === VERTICAL ? i * this.theme.spacing.layer : (j + d) * this.theme.spacing.neuron;
 
         if (this.theme.dynamic) {
-          let c = NetGraph.colorScale(
+          let c = p5.NetGraph.colorScale(
             layers[i].layer.matrix[j - s][0],
             this.theme.valueBounds.neuron.min,
             this.theme.valueBounds.neuron.max,

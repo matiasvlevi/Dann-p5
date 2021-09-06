@@ -1,5 +1,5 @@
 // Setters
-NetGraph.prototype.convertToColor = function convertToColor() {
+p5.NetGraph.prototype.convertToColor = function convertToColor() {
   this.setColor('background', this.theme.colors.background);
   this.setColor('neuron.min', this.theme.colors.neuron.min);
   this.setColor('neuron.max', this.theme.colors.neuron.max);
@@ -9,16 +9,16 @@ NetGraph.prototype.convertToColor = function convertToColor() {
   this.setColor('stroke.neuron', this.theme.colors.stroke.neuron);
   return;
 };
-NetGraph.prototype.setModel = function setModel(model) {
+p5.NetGraph.prototype.setModel = function setModel(model) {
   this.model = model;
 };
-NetGraph.prototype.setMode = function setMode(mode) {
+p5.NetGraph.prototype.setMode = function setMode(mode) {
   this.theme.mode = mode;
 };
-NetGraph.prototype.setSpread = function setSpread(spread) {
+p5.NetGraph.prototype.setSpread = function setSpread(spread) {
   this.theme.spread = spread;
 };
-NetGraph.prototype.setTheme = function setTheme(constant = CLASSIC) {
+p5.NetGraph.prototype.setTheme = function setTheme(constant = CLASSIC) {
   if (typeof constant !== 'object') {
     this.theme = themes[constant];
     this.convertToColor();
@@ -27,24 +27,24 @@ NetGraph.prototype.setTheme = function setTheme(constant = CLASSIC) {
   }
 
 };
-NetGraph.prototype.setPos = function setPos(x, y) {
+p5.NetGraph.prototype.setPos = function setPos(x, y) {
   this.x = x;
   this.y = y;
 };
-NetGraph.prototype.setStrokeWeight = function setStrokeWeight(key, w) {
+p5.NetGraph.prototype.setStrokeWeight = function setStrokeWeight(key, w) {
   this.theme.strokeWeight[key] = w;
 };
-NetGraph.prototype.setSpacing = function setSpacing(s) {
+p5.NetGraph.prototype.setSpacing = function setSpacing(s) {
   this.theme.spacing.neuron = s;
 };
-NetGraph.prototype.setOrientation = function setOrientation(O) {
+p5.NetGraph.prototype.setOrientation = function setOrientation(O) {
   this.theme.orientation = O;
 };
-NetGraph.prototype.neuronSize = function neuronSize(s) {
+p5.NetGraph.prototype.neuronSize = function neuronSize(s) {
   this.theme.size.neuron = s;
 };
 
-NetGraph.prototype.setColor = function setColor(key, rgba) {
+p5.NetGraph.prototype.setColor = function setColor(key, rgba) {
   let col = rgba instanceof p5.Color ? rgba : color.apply(1, rgba);
   // If two keys were specified.
   if (key.indexOf('.') !== -1) {

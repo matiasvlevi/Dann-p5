@@ -1,5 +1,5 @@
 // Constructor
-NetGraph = function NetGraph(x, y, w, h) {
+p5.NetGraph = function NetGraph(x, y, w, h) {
   // Main properties
   this.x = x;
   this.y = y;
@@ -11,8 +11,8 @@ NetGraph = function NetGraph(x, y, w, h) {
   this.theme = JSON.parse(JSON.stringify(themes[CLASSIC]));
   this.convertToColor();
 };
-NetGraph.themes = themes;
+p5.NetGraph.themes = themes;
 
 function createNetGraph(x, y, w, h) {
-  return new NetGraph(x, y, w, h);
+  return new p5.NetGraph(x, y, w, h);
 }

@@ -1,4 +1,4 @@
-NetGraph.colorScale = function colorScale(i, smallBound, largeBound, min, max, spread) {
+p5.NetGraph.colorScale = function colorScale(i, smallBound, largeBound, min, max, spread) {
   let p = spread;
   let div = (Math.abs(largeBound - smallBound)) * p;
   let mred = min._getRed();
