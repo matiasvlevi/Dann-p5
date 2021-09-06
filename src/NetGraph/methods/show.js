@@ -6,7 +6,6 @@ NetGraph.prototype.show = function show(model) {
   fill(this.theme.colors.background);
   stroke(this.theme.colors.stroke.contour);
 
-
   // Renders
   rect(
     this.x,
@@ -16,12 +15,9 @@ NetGraph.prototype.show = function show(model) {
   );
 
   if (this.model !== undefined) {
-
     this.graphWeights();
     this.graphLayers();
-
   }
-
 
   pop();
 }
