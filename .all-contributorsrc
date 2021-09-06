@@ -14,6 +14,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "ramos-papadopoulos",
+      "name": "EL Ramos",
+      "avatar_url": "https://avatars.githubusercontent.com/u/82990932?v=4",
+      "profile": "https://github.com/ramos-papadopoulos",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
