@@ -49,3 +49,31 @@ function draw() {
 }
 
 ```
+
+<br/>
+
+```js
+// Create Dann model
+let nn = new Dann(2, 1);
+nn.addHiddenLayer(12);
+nn.makeWeights();
+
+let graph;
+function setup() {
+  createCanvas(600, 600);
+ 
+  // Graph at: x:10 y:10 w:200 h:125
+  graph = new NetGraph(10, 10, 200, 125);
+  graph.setMode(FIXED);
+  graph.setSpacing(16);
+  graph.setTheme(ROBOT);
+  graph.setModel(nn);
+}
+
+function draw() {
+  background(51);
+
+  // Show on screen
+  graph.show();
+}
+```
