@@ -89,17 +89,15 @@ function draw() {
 
 
 # Socials
+
 [![IMAGE](https://raw.githubusercontent.com/matiasvlevi/SocialMediaIcons/main/twitter.svg)](https://twitter.com/dannjsai)
 [![image](https://raw.githubusercontent.com/matiasvlevi/SocialMediaIcons/main/patreon.svg)](https://www.patreon.com/join/dannjs)
 [![image](https://raw.githubusercontent.com/matiasvlevi/SocialMediaIcons/main/instagram.svg)](https://www.instagram.com/dannj.s/)
+
 <br/>
 
-## Licence
-MIT
 
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+## Contributors 
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -116,4 +114,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## Licence
+MIT
+
+
