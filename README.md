@@ -13,7 +13,7 @@
   </p>
   <br/>
   <p align="center">
-  <img src="assets/training.gif" height="240">  <img src="assets/training2.gif" height="240">
+  <img src="assets/training.gif" height="200">  <img src="assets/training2.gif" height="200">
   </p>
 
 <br/>
