@@ -87,8 +87,8 @@ function draw() {
 
 # Socials
 [https://raw.githubusercontent.com/matiasvlevi/SocialMediaIcons/main/twitter.svg]()
-[https://discord.com/channels/@me/497813191364050972/884253235987251300]()
-[https://discord.com/channels/@me/497813191364050972/884253268912537620]()
+[https://raw.githubusercontent.com/matiasvlevi/SocialMediaIcons/main/patreon.svg]()
+[https://raw.githubusercontent.com/matiasvlevi/SocialMediaIcons/main/instagram.svg]()
 
 <br/>
 
