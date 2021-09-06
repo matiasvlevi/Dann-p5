@@ -87,7 +87,8 @@ function draw() {
 
 # Socials
 ![IMAGE](https://raw.githubusercontent.com/matiasvlevi/SocialMediaIcons/main/twitter.svg)
-
+![image](https://raw.githubusercontent.com/matiasvlevi/SocialMediaIcons/main/patreon.svg)
+![image](https://raw.githubusercontent.com/matiasvlevi/SocialMediaIcons/main/instagram.svg)
 <br/>
 
 ## Licence
