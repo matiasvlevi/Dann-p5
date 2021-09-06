@@ -42,6 +42,7 @@ function setup() {
   graph = createNetGraph(10, 10, 200, 125);
   graph.setModel(nn);
 }
+
 function draw() {
   background(51);
   // Display graph
@@ -70,6 +71,7 @@ function setup() {
   graph.setTheme(ROBOT);
   graph.setModel(nn);
 }
+
 function draw() {
   background(51);
   // Display graph
