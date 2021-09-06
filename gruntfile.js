@@ -26,7 +26,7 @@ module.exports = function(grunt) {
     http: {
       getDann: {
         options: {
-          url: 'https://cdn.jsdelivr.net/gh/matiasvlevi/dann@latest/build/dann.min.js',
+          url: 'https://cdn.jsdelivr.net/gh/matiasvlevi/dann@latest/build/dann.js',
           callback: function(e, r, b) {
             if (e !== null) {
               grunt.log.write(e)
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
       },
       getP5: {
         options: {
-          url: 'https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js',
+          url: 'https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.js',
           callback: function(e, r, b) {
             if (e !== null) {
               grunt.log.write(e)
