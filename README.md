@@ -77,3 +77,13 @@ function draw() {
   graph.show();
 }
 ```
+
+<br/>
+
+
+# Socials
+
+<br/>
+
+## Licence
+MIT
