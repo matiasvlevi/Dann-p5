@@ -20,7 +20,7 @@
 
 ### CDN
 ```html
-<script src="https://raw.githubusercontent.com/matiasvlevi/Dann-p5/main/build/dannp5.min.js?token=AMBCRUH4N6QUDMJYYWC4KNDBGVWEC"></script>
+<script src="https://raw.githubusercontent.com/matiasvlevi/Dann-p5/v0.0.1/build/dannp5.min.js"></script>
 ```
 
 <br/>
