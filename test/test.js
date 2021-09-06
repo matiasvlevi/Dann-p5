@@ -27,8 +27,7 @@ const colors = [
 ]
 const modes = [
   FIXED,
-  SQUARE,
-  FIXED_UP
+  SQUARE
 ]
 
 const ori = [
@@ -38,30 +37,34 @@ const ori = [
 
 function createGraph(x, y) {
   let nn = new Dann(5, 5);
-  nn.addHiddenLayer(floor(random(6, 18)), 'leakyReLU');
+  nn.addHiddenLayer(floor(random(12, 18)), 'leakyReLU');
+  nn.addHiddenLayer(floor(random(8, 12)), 'leakyReLU');
   nn.makeWeights(-0.1, 0.1);
   nn.lr = 0.001;
-  graph = createNetGraph(x, y, 420, 250);
+  graph = createNetGraph(x, y, 300, 200);
 
   graph.setModel(nn);
 
 
 
   // // Rainbow theme
-  // let ran = floor(random(0, colors.length - 1));
-  // graph.setColor('weights.min', colors[ran]);
-  // graph.setColor('weights.max', colors[ran + 1]);
-  // graph.setColor('neuron.min', colors[ran]);
-  // graph.setColor('neuron.max', colors[ran + 1]);
+  let ran = floor(random(0, colors.length - 1));
+  graph.setColor('weights.min', colors[ran]);
+  graph.setColor('weights.max', colors[ran + 1]);
+  graph.setColor('neuron.min', colors[ran]);
+  graph.setColor('neuron.max', colors[ran + 1]);
+  let ran2 = floor(random(0, modes.length));
+  graph.setMode(modes[ran2]);
+  graph.setSpread(0.5);
   return graph;
 }
 
 function setup() {
   createCanvas(wnx, wny);
   frameRate(120);
-  for (let j = 0; j < 3; j++) {
-    for (let i = 0; i * 400 <= wny - 400; i++) {
-      graphs.push(createGraph(80 + (j * 500), (i * 350) + 80));
+  for (let j = 0; j < 5; j++) {
+    for (let i = 0; i * 300 <= wny - 300; i++) {
+      graphs.push(createGraph(80 + (j * 360), (i * 300) + 150));
     }
   }
 }
