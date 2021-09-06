@@ -11,3 +11,8 @@ NetGraph = function NetGraph(x, y, w, h) {
   this.theme = JSON.parse(JSON.stringify(themes[CLASSIC]));
   this.convertToColor();
 };
+NetGraph.themes = themes;
+
+function createNetGraph(x, y, w, h) {
+  return new NetGraph(x, y, w, h);
+}

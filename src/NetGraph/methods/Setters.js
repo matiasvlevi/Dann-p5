@@ -1,4 +1,14 @@
 // Setters
+NetGraph.prototype.convertToColor = function convertToColor() {
+  this.setColor('background', this.theme.colors.background);
+  this.setColor('neuron.min', this.theme.colors.neuron.min);
+  this.setColor('neuron.max', this.theme.colors.neuron.max);
+  this.setColor('weights.min', this.theme.colors.weights.min);
+  this.setColor('weights.max', this.theme.colors.weights.max);
+  this.setColor('stroke.contour', this.theme.colors.stroke.contour);
+  this.setColor('stroke.neuron', this.theme.colors.stroke.neuron);
+  return;
+};
 NetGraph.prototype.setModel = function setModel(model) {
   this.model = model;
 };
@@ -33,16 +43,7 @@ NetGraph.prototype.setOrientation = function setOrientation(O) {
 NetGraph.prototype.neuronSize = function neuronSize(s) {
   this.theme.size.neuron = s;
 };
-NetGraph.prototype.convertToColor = function convertToColor() {
-  this.setColor('background', this.theme.colors.background);
-  this.setColor('neuron.min', this.theme.colors.neuron.min);
-  this.setColor('neuron.max', this.theme.colors.neuron.max);
-  this.setColor('weights.min', this.theme.colors.weights.min);
-  this.setColor('weights.max', this.theme.colors.weights.max);
-  this.setColor('stroke.contour', this.theme.colors.stroke.contour);
-  this.setColor('stroke.neuron', this.theme.colors.stroke.neuron);
-  return;
-};
+
 NetGraph.prototype.setColor = function setColor(key, rgba) {
   let col = rgba instanceof p5.Color ? rgba : color.apply(1, rgba);
   // If two keys were specified.

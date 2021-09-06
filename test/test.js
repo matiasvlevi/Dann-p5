@@ -41,7 +41,7 @@ function createGraph(x, y) {
   nn.addHiddenLayer(floor(random(6, 18)), 'leakyReLU');
   nn.makeWeights(-0.1, 0.1);
   nn.lr = 0.001;
-  graph = new NetGraph(x, y, 420, 250);
+  graph = createNetGraph(x, y, 420, 250);
 
   graph.setModel(nn);
 
@@ -67,21 +67,6 @@ function setup() {
 }
 let dataset = makeBinary(5);
 let index = 0;
-
-function shuffle(arr) {
-  let currentId = arr.length;
-
-  while (0 !== currentId) {
-
-    let randId = Math.floor(Math.random() * currentId);
-    currentId -= 1;
-
-    let temp = arr[currentId];
-    arr[currentId] = arr[randId];
-    arr[randId] = temp;
-  }
-  return arr;
-}
 
 function draw() {
   background(51);

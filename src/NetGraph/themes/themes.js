@@ -28,7 +28,7 @@ const themes = {
       layer: 100
     },
     mode: 'fixed',
-    spread: 0.1,
+    spread: 2,
     dynamic: true,
     valueBounds: {
       neuron: {
