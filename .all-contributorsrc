@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "matiasvlevi",
+      "name": "Matias Vazquez-Levi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50473168?v=4",
+      "profile": "https://www.linkedin.com/in/matias-vazquez-levi-846a991a6/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Dann-p5",
+  "projectOwner": "matiasvlevi",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
