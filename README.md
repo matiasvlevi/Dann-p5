@@ -86,7 +86,7 @@ function draw() {
 
 
 # Socials
-[https://www.patreon.com/join/dannjs](https://raw.githubusercontent.com/matiasvlevi/SocialMediaIcons/main/patreon.svg)
+[https://raw.githubusercontent.com/matiasvlevi/SocialMediaIcons/main/patreon.svg]([https://www.patreon.com/join/dannjs])
 
 <br/>
 
