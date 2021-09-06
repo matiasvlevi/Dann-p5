@@ -5,9 +5,10 @@ module.exports = function(grunt) {
     concat: {
       build: {
         src: [
+          // Dependencies
           'temp/dann.min.js',
           'temp/p5.min.js',
-          'src/dom/*.js',
+          // Dann-p5
           'src/NetGraph/themes/*.js',
           'src/NetGraph/*.js',
           'src/error/*.js',
