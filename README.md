@@ -27,7 +27,7 @@
 
 # Getting started
 
-Setup a graph for a model.
+#### Setup a graph for a model.
 
 ```js
 // Create Dann model
@@ -53,7 +53,7 @@ function draw() {
 
 <br/>
 
-Here is how you can customize the graphs's theme:
+#### Customize the graphs's theme
 
 ```js
 // Create Dann model
@@ -67,6 +67,9 @@ function setup() {
   // Create graph
   graph = createNetGraph(10, 10, 200, 125);
   graph.setMode(FIXED);
+  graph.setStrokeWeight('weight', 4);
+  graph.setColor('neuron.max', [255,0,0,255]);
+  graph.setColor('neuron.min', [0,0,255,255]);
   graph.setSpacing(16);
   graph.setTheme(ROBOT);
   graph.setModel(nn);
@@ -82,6 +85,56 @@ function draw() {
 
 <br/>
 
+#### All available options
+
+```js
+// Set a Dann model
+graph.setModel(model);
+
+// Set an individual color
+graph.setColor(key, [r, g, b, a]);
+
+/*Available keys:
+* background
+* neuron.min
+* neuron.max
+* weights.min
+* weights.max
+* stroke.contour
+* stroke.neuron
+*/
+
+// Set theme preset
+graph.setTheme(theme); // CLASSIC, MODERN, ROBOT, STANDARD
+
+// Set display mode
+graph.setMode(mode);   // SQUARE, FIXED, FIXED_UP
+
+// Set graph position
+graph.setPos(x, y);
+
+// Set stroke weight
+graph.setStrokeWeight(key, value);
+/* Available keys:
+* weight
+* neuron
+*/
+
+// Set value spread (the bigger, the less change in color)
+graph.setSpread(value)
+
+// Set neuron spacing (only with FIXED modes)
+graph.setSpacing(value);
+
+// Set neuron size
+graph.setNeuronSize(value);
+
+// Set orientation of the graph
+graph.setOrientation(orientation); // VERTICAL, HORIZONTAL
+```
+
+
+<br/><br/>
 
 # Socials
 
