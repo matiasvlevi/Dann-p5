@@ -8,4 +8,4 @@
 </p>
 <h4 align="center">p5js graphics for Dann models</h4>
 <p align="center">
-    Display any dann model & add customize themes!
+    Display any Dann model & customize themes!
