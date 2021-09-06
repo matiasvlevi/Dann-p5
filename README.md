@@ -85,7 +85,7 @@ function draw() {
 
 <br/>
 
-#### All available options
+# All available options
 
 ```js
 // Set a Dann model
