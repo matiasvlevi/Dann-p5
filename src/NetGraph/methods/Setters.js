@@ -40,7 +40,7 @@ p5.NetGraph.prototype.setSpacing = function setSpacing(s) {
 p5.NetGraph.prototype.setOrientation = function setOrientation(O) {
   this.theme.orientation = O;
 };
-p5.NetGraph.prototype.neuronSize = function neuronSize(s) {
+p5.NetGraph.prototype.setNeuronSize = function neuronSize(s) {
   this.theme.size.neuron = s;
 };
 
