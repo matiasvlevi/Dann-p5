@@ -6,8 +6,8 @@ module.exports = function(grunt) {
       build: {
         src: [
           // Dependencies
-          'temp/dann.min.js',
-          'temp/p5.min.js',
+          'node_modules/dannjs/build/dann.js',
+          'node_modules/p5/lib/p5.js',
           // Dann-p5
           'src/NetGraph/themes/*.js',
           'src/NetGraph/*.js',
@@ -23,39 +23,6 @@ module.exports = function(grunt) {
         dest: 'build/dannp5.min.js'
       }
     },
-    http: {
-      getDann: {
-        options: {
-          url: 'https://cdn.jsdelivr.net/gh/matiasvlevi/dann@latest/build/dann.js',
-          callback: function(e, r, b) {
-            if (e !== null) {
-              grunt.log.write(e)
-            } else {
-              grunt.log.write('Loaded successfully with status code: ' + r.statusCode)
-            }
-          },
-
-        },
-        dest: 'temp/dann.min.js'
-      },
-      getP5: {
-        options: {
-          url: 'https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.js',
-          callback: function(e, r, b) {
-            if (e !== null) {
-              grunt.log.write(e)
-            } else {
-              grunt.log.write('Loaded successfully with status code: ' + r.statusCode)
-            }
-          }
-        },
-        dest: 'temp/p5.min.js'
-
-      }
-    },
-    clean: {
-      temp: ['temp']
-    },
   }
 
   // Load configuration
@@ -64,15 +31,12 @@ module.exports = function(grunt) {
   // Load the all plugins
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-terser');
-  grunt.loadNpmTasks('grunt-http');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadTasks('tasks');
+  // Load custom tasks
+  //grunt.loadTasks('tasks');
 
   // Register build task
   grunt.registerTask('build', [
-    'http',
     'concat:build',
-    'clean:temp',
     'terser:minify'
   ]);
 
