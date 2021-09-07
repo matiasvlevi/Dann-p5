@@ -98,7 +98,6 @@ graph.setTheme(theme); // CLASSIC, MODERN, ROBOT, STANDARD
 
 // Set an individual color
 graph.setColor(key, [r, g, b, a]);
-
 /*Available keys:
 * background
 * neuron.min
