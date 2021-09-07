@@ -55,7 +55,7 @@ function draw() {
 
 <br/>
 
-#### Customize the graphs's theme
+#### Customize the graph's theme
 
 ```js
 // Create Dann model
