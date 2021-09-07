@@ -27,6 +27,7 @@ const colors = [
 ]
 const modes = [
   FIXED,
+  FIXED_UP,
   SQUARE
 ]
 
