@@ -9,7 +9,7 @@
 <h4 align="center">p5js graphics for Dannjs</h4>
 <p align="center">
     Display any Dann model & customize themes!
-
+ 
   </p>
   <br/>
   <p align="center">
@@ -17,6 +17,10 @@
   </p>
 
 <br/>
+
+    This library is still in the early stages of development, contributors are more than welcome!
+
+<br/><br/>
 
 ### CDN
 ```html
