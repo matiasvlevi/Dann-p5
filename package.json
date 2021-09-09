@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "grunt build",
-    "test": "start test/index.html"
+    "test:netGraph": "start test/netGraph/index.html",
+    "test:valueGraph": "start test/valueGraph/index.html"
   },
   "keywords": [],
   "author": "",
